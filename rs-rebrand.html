@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <title>Shan's home page</title>
+    <meta charset="utf-8">
+    
+    <!--Header & body font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+    <style>
+      /* Text stuff */
+      body {
+        background-color: #0f0f0f;
+        width: 1440px;
+        margin: 0 auto;
+        
+        font-size: 20px;
+        color: white;
+        font-family: "Source Sans 3", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+      }
+      
+      p {
+        font-size: 20px;
+        color: white;
+        font-family: "Source Sans 3", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+      }
+      
+      h1 {
+        font-family: "Sedgwick Ave Display", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3.2em;
+      }
+      
+      h2 {
+        font-family: "Sedgwick Ave Display", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.7em;
+        margin-bottom: -.3em;
+      }
+      
+      h3 {
+        font-family: "Sedgwick Ave Display", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2em;
+      }
+      
+      /* Header sutff */
+      header {
+        background-color: #171717;
+        height: 100px;
+        position: sticky;
+        top: 0;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 50px;
+        z-index: 1000;
+      }
+      
+      ul {
+        list-style: none;
+        font-size: 1em;
+        color: white;
+        text-align: right;
+        
+        font-family: "Source Sans 3", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        text-transform: uppercase;
+      }
+
+      li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+      
+      li:last-child {
+        margin-right: 0;
+      }
+      
+      ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      
+      ul li a:hover {
+        text-decoration: underline;
+      }
+      
+      .hero-container {
+      display: flex;
+      align-items: center;
+      position: static;
+      text-align: center;
+      color: white;
+      width: 100%;
+      height: 400px;
+        background-color: #aaaaaa;
+        background-image: url('hero-img.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+      .center-hero-text {
+      width: 100%;
+      font-size: 4.8em;
+        font-family: "Sedgwick Ave Display", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .thee-container {
+        width: 1200px;
+        margin: auto;
+     /*   background-color: red; */
+      }
+      
+      .projects-grid {
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        gap: 25px 12.5px;
+        margin: 0;
+        padding: 0 0;
+      }
+      
+      .grid-item {
+       /* background-color: blue; */
+        border-radius: 10px;
+        height: 250px;
+        width: 383px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      
+      .grid-item img {
+        border-radius: 10px;
+        height: 250px;
+        width: 383px;
+        position: absolute;
+        object-fit: cover;
+        transition: opacity 0.3s ease;
+      }
+      
+      .img-hover {
+        opacity: 0;
+      }
+      
+      .grid-item:hover .img-hover {
+        opacity: 1;
+        box-shadow: 5px 10px #888888;
+      }
+      
+      .grid-item:hover .img-default {
+        opacity: 0;
+      }
+      
+      .grid-link {
+        text-decoration: none;
+        display: inline-block; /* or block if you want full width */
+      }
+      
+      .about-me {
+        display: grid;
+        width: 1200px;
+        grid-template-columns: 56% 40%;
+        gap: 15px;
+        padding: 0 0;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+      
+      .about-me p {
+        padding-right: 10px;
+      }
+      
+      .me-pic {
+        height: 580px;
+        width: 669px;
+        border-radius: 10px;
+        float: left;
+        background-color: blue;
+        background-image: url('me_pic.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+      
+    
+      /* Footer stuff */
+      footer {
+        background-color: #171717;
+        height: 175px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 50px;
+      } 
+      
+      footer a {
+        color: white;
+      }
+
+
+      .f-logos {
+        display: flex;
+        justify-content: space-between;
+        width: 270px;
+      }
+
+      .divider {
+        width: 1px;
+        background-color: #ccc;
+        height: 80%;
+        margin: 0 30px;
+      }
+
+
+    </style>
+    
+    
+  </head>
+  
+  
+   <body>
+     <header>
+     <h1>SAHV</h1>
+     <nav>
+      <ul>
+         <li><a href="index.html">Home</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="videography.html">Videography</a></li>
+        <li><a href="graphics.html">Graphics Design</a></li>
+        <li><a href="b-projects.html">Big Projects</a></li>
+        
+      </ul>
+    </nav>
+    </header>
+      
+     <div class="hero-container">
+       <div class="center-hero-text">Brand Redesign</div>
+     </div>
+     
+     <div class="thee-container">
+        <h2>Table of Contents</h2>
+        <p>
+          1. Problem Space <br>
+          2. Big Idea <br>
+          3. Updated Logo <br>
+            a. Design Rationale <br>
+            b. Design Iterations <br>
+          4. Mockups <br>
+            a. Drinks <br>
+            b. Merch <br>
+          5. Refined Brand Positioning <br>
+            a. Slogans and Taglines <br>
+            b. Social Media Strategy <br>
+            c. Example Social Videos <br>
+          6. Conclusion
+       </p>
+       
+       <div class="projects-grid">
+         <a href="photography.html#gbda-201-a1" class="grid-link">
+         <div class="grid-item">
+           <img src="pp/pp-1.png" alt="two skateboarders" class="img-default">
+           <img src="pp/pp-1-s.png" alt="two skateboarders, image is darker to display the project title text - GBDA 201 - photography assignment" class="img-hover">
+         </div>
+         </a>
+         
+         <a href="videography.html#silent-film" class="grid-link">
+         <div class="grid-item">
+           <img src="pp/pp-3.png" alt="thumbnail of cif silent film video" class="img-default">
+           <img src="pp/pp-3-h.png" alt="thumbnail of cif silent film video, darkened and has project title silent film" class="img-hover">
+         </div>
+         </a>
+         
+         
+         <a href="videography.html#acs-doc" class="grid-link">
+         <div class="grid-item">
+           <img src="pp/pp-5.png" alt="acs documentary thumbnail" class="img-default">
+           <img src="pp/pp-5-h.png" alt="acs documentary thumbnail, darkened and with title text" class="img-hover">
+         </div>
+         </a>
+         
+         
+         <a href="photography.html#qc-grad" class="grid-link">
+         <div class="grid-item">
+           <img src="pp/pp-2.png" alt="two boys on top of sundial, a third taking a picture of them" class="img-default">
+           <img src="pp/pp-2-h.png" alt="darkened photo of two boys sitting on sundial, text that says qc graduation" class="img-hover">
+         </div>
+         </a>
+         
+         <a href="photography.html#gbda-201-a1" class="grid-link">
+         <div class="grid-item">
+           <img src="pp/pp-4.png" alt="close up of butterfly" class="img-default">
+           <img src="pp/pp-4-h.png" alt="close up of butterfly, darkened, text that says gbda 201 photography assignment" class="img-hover">
+         </div>
+         </a>
+         
+         <a href="photography.html#acs-bb" class="grid-link">
+         <div class="grid-item">
+           <img src="pp/pp-6.png" alt="three people at a table talking" class="img-default">
+           <img src="pp/pp-6-h.png" alt="3 people at a table talking, darkened, title text - bartending and besties" class="img-hover">
+         </div>
+         </a>
+         
+       </div>
+       
+       <h2>About me</h2>
+       <div class="about-me">
+         <div class="me-pic"> </div>
+          <div class="bio">
+            <p>Hey there! My name is Shannon. I’m from Barbados but I moved to Canada to study Global Business and Digital Arts (GBDA) at the University of Waterloo.
+            </p>
+         <p>I grew up with a father who loved taking photos, and his passion for documenting life 
+           quickly became my own. That interest expanded into YouTube and videography, where I spent 
+           my childhood filming with friends and teaching myself how to edit, brand, and tell stories.
+            </p>
+        
+          <p>
+           Over time, photography, videography, design, and marketing all merged into one creative path, which led me to GBDA. I’ve already had the opportunity to explore 
+            the professional side of this work at PwC, where I created promotional content and learned how my skills can fit into real marketing environments.
+            </p>
+         
+            <p>
+         Wherever I end up working in the future, I hope to keep capturing everyday moments and shaping them into stories worth remembering.
+         </p>
+         </div> 
+       </div>  
+     </div>
+    
+     <footer>
+    <h3>Let's get up to some <br>shananigans together!</h3>
+       
+    <div class="divider"></div>
+    
+     <p>
+         Phone (Barbadian): +1 (246) 827-1222 <br>
+         Phone (Canadian): +1 (226) 201-7012 <br>
+         Email: <a href="mailto:svaughan@uwaterloo.ca">svaughan@uwaterloo.ca</a> 
+     </p>
+    
+     <div class="divider"></div>
+    
+   <div class="f-logos">
+    <a href="https://www.instagram.com/itz._.shanz?igsh=MTF0aWY1ZG1tazlreA==" target="_blank"><img src="icons/insta-logo.webp" alt="instagram logo" height="70"></a>
+    <a href="https://www.youtube.com/@SpaceLegends/featured" target="_blank"><img src="icons/yt-logo.webp" alt="youtube logo" height="70"></a>   
+    <a href="https://www.linkedin.com/in/shannon-vaughan-1b9913349/" target="_blank"><img src="icons/linkedin-logo.webp" alt="instagram logo" height="70"></a> 
+    </div>  
+  </footer>
+
+   
+    
+    
+    
+  </body>
+  
+  
+  
+  
+  
+  
+  
+</html>
