@@ -128,6 +128,7 @@
         width: 1200px;
         margin: auto;
      /*   background-color: red; */
+        background-color: red;
       }
       
       .thee-container h1 {
@@ -235,9 +236,20 @@
         margin: 0 30px;
       }
       
+      /* Table of contents stuff */
       .tabbed {
         text-indent: 25px;
         margin-top: -.9em;
+      }
+      
+      .tab-of-cont {
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 25px 12.5px;
+        margin: 0;
+        padding: 0 0;
+        background-color: pink;
       }
       
       .case-study p {
@@ -300,20 +312,25 @@
          <h1>Table of Contents</h1>
         
        <div class="tab-of-cont">
-         <p>1. The Problem Space</p>
+         <div class="toc-left">
+           <p>1. The Problem Space</p>
          <p>2. Big Idea</p>
          <p>3. Updated Logo</p>
          <p class="tabbed">a. Design Rationale</p>
          <p class="tabbed">b. Design Iterations</p>
          <p>4. Updated Packaging</p>
-         <p>5. Mockups</p>
+         </div>
+         
+         <div class="toc-right">
+           <p>5. Mockups</p>
          <p class="tabbed">a. Drinks </p>
          <p class="tabbed">b. Merch </p>
          <p>6. Refined Brand Positioning</p>
-         <p class="tabbed">a. Slogans and Taglines </p>
-         <p class="tabbed">b. Social Media Strategy </p>
-         <p class="tabbed">c. Example Social Videos </p>
+         <p class="tabbed">a. Social Media Strategy </p>
+         <p class="tabbed">b. Example Social Videos </p>
          <p>7. Conclusion</p>
+         </div>
+         
        </div>
        
        <h1>The Problem Space</h1>
