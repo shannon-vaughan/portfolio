@@ -251,7 +251,7 @@
         width: 1200px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 25px 12.5px;
+        gap: auto;
         margin: 0;
         padding: 0 0;
         
@@ -322,7 +322,7 @@
       .takeaways {
         width: 1200px;
         display: grid;
-        grid-template-columns: 33% 33% 33%;
+        grid-template-columns: repeat(3, 1fr);
         gap: 25px auto;
         margin: 0 auto;
         padding: 0 0;
@@ -331,9 +331,12 @@
       
       .b-point {
         width: 350px;
-        height: 250px;
         
+        margin-top: 1.8em;
+        margin-bottom: 1.8em;
         border-radius: 10px;
+        background-color: black;
+        padding: 5px 20px;
         
       }
       
@@ -361,6 +364,28 @@
         text-decoration: underline;
       }
       
+      .toc-left {
+        border-radius: 10px 0 0 10px;
+        background-color: black;
+        padding: 5px 20px;
+        margin-top: 1em;
+      }
+      
+      .toc-mid {
+        border-radius: 0px;
+        background-color: black;
+        padding: 5px 20px;
+        margin-top: 1em;
+        
+      }
+      
+      .toc-right {
+        border-radius: 0 10px 10px 0;
+        background-color: black;
+        padding: 5px 20px;
+        margin-top: 1em;
+        
+      }
       
       /* back to top button shit*/
       #backToTop {
@@ -735,7 +760,7 @@
            
              <div class="b-point">
              <p>
-               Strategic Thinking<br>
+               <b>Strategic Thinking</b><br>
                Developed a structured approach to brand and competitive analysis,
                allowing me to identify positioning opportunities.
                </p>
@@ -743,7 +768,7 @@
            
            <div class="b-point">
              <p>
-               GenAi as a Design Tool<br>
+               <b>GenAi as a Design Tool</b><br>
                Used GenAi to quickly generate mockups, visualize concepts in context 
                and iterate efficiently.
                </p>
@@ -751,7 +776,7 @@
            
            <div class="b-point">
              <p>
-               From concept to Campaign<br>
+               <b>From Concept to Campaign</b><br>
                Learned how to articulate, pitch and evolve an idea into a cohesive
                campaign supported by strong visuals and social content.
              </p>
