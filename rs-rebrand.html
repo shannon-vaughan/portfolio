@@ -244,12 +244,13 @@
       .tabbed {
         text-indent: 25px;
         margin-top: -.9em;
+        
       }
       
       .tab-of-cont {
         width: 1200px;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: repeat(3, 1fr);
         gap: 25px 12.5px;
         margin: 0;
         padding: 0 0;
@@ -261,6 +262,12 @@
         font-size: 1.0em;
         
       }
+      
+      .tab-of-cont p {
+        font-size: 1.3em;
+      }
+      
+      
       
       .slides {
         background-color: red;
@@ -290,12 +297,20 @@
       
       .social-strat {
         display: grid;
-        grid-template-columns: 33% 33% 33%;
-        gap: 25px 12.5px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px 20px;
         margin: 0px;
         padding: 0px;
         width: 1200px;
       }
+      
+      .b-bubble {
+        border-radius: 10px;
+        background-color: black;
+        padding: 5px 20px;
+        margin-top: 1.8em;
+      }
+      
       
       .social-vids {
         display: flex;
@@ -431,17 +446,23 @@
          <p>3. <a href="rs-rebrand.html#u-logos">Updated Logo</a></p>
          <p class="tabbed">a. <a href="rs-rebrand.html#d-rationale">Design Rationale</a></p>
          <p class="tabbed">b. <a href="rs-rebrand.html#d-iterations">Design Iterations</a></p>
-         <p>4. <a href="rs-rebrand.html#u-packaging">Updated Packaging</a></p>
+         
          </div>
          
-         <div class="toc-right">
+         <div class="toc-mid">
+           <p>4. <a href="rs-rebrand.html#u-packaging">Updated Packaging</a></p>
            <p>5. <a href="rs-rebrand.html#mockups">Mockups</a></p>
          <p class="tabbed">a. <a href="rs-rebrand.html#d-cans">Drink cans</a></p>
          <p class="tabbed">b. <a href="rs-rebrand.html#merch">Merch</a> </p>
+         </div>
+         
+         <div class="toc-right">
+           
          <p>6. <a href="rs-rebrand.html#r-positioning">Refined Brand Positioning</a></p>
          <p class="tabbed">a. <a href="rs-rebrand.html#sm-strat">Social Media Strategy</a></p>
          <p class="tabbed">b. <a href="rs-rebrand.html#eg-vids">Example Social Videos</a></p>
          <p>7. <a href="rs-rebrand.html#conclusion">Conclusion</a></p>
+         <p class="tabbed">a. <a href="rs-rebrand.html#p-takes">Personal Takeaways</a></p>
          </div>
          
        </div>
@@ -613,37 +634,43 @@
          
          <h3 class="heading" id="sm-strat">Social Media Strategy</h3>
          <div class="social-strat">
-           <p>
-              1. Fuel the Grind <br>
-           Emphasize the grind and progression behind 
+           <div class="b-bubble">
+             <p>
+             <b>1. Fuel the Grind</b><br>
+           Emphasize the work behind 
            the journey from bedroom to big stage.<br>
            - Garage -&gt Global edits <br>
            - Behind-the-scenes content with brand ambassadors and event coordinators. <br>
-           
-           
-         </p>
-         
           
+         </p>
+           </div>
            
-         <p>
-          2. Create the stage <br>
+         
+          <div class="b-bubble">
+            <p>
+          <b>2. Create the stage</b> <br>
            Turn social media into a discovrey platform for emerging talent.<br>
            - Monthly performance challenges <br>
            - Eg: freestyle rap and dance battles <br>
            - Sponsored Battle of the Bands and other competitions <br>
-           #RockstarMoment community feature
-         </p>
-         
-        
            
-         <p>
-           3. Spotlight the Talent <br>
+         </p>
+           </div>
+           
+         
+         <div class="b-bubble">
+           <p>
+           <b>3. Spotlight the Talent</b> <br>
            Reward creators with visibility and recognition. <br>
            - Social feature campaigns <br>
            - YouTube interviews <br>
            - Highlight reels and shorts <br>
            - Live-streamed finals <br>
          </p>
+           </div>
+        
+           
+         
          </div>
          
          
